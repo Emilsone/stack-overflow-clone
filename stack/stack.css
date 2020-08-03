@@ -151,10 +151,13 @@ h1, p, .dev-bus{
 }
 .dev-bus{
     margin:50px;
+    display: flex;
+    justify-content: center;
 }
 .bus-dev{
     background: #f48024;
     color: #ffffff;
+  
 }
 .develop h1{
     font-size: 34px;
@@ -500,4 +503,26 @@ ul{
     font-weight: bold;
     font-family:Helvetica, sans-serif;
     color: #BBC0C4;
+}
+@media (max-width:768px){
+    .dev-bus{
+        flex-direction: column;
+        width: 70%;
+    }
+    form{
+        visibility: hidden;
+    }
+    .link-tag a{
+        text-decoration:none;
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        font-size: 5px;
+    }
+    .header{
+        padding: 0px;
+    }
 }
